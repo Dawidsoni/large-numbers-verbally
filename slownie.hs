@@ -8,7 +8,7 @@ getName num curr = slownie (getCurrency curr) num
 
 getNameWithArgs :: [String] -> String
 getNameWithArgs args = getName num curr where
-	["slownie", strNum, curr] = args
+	[strNum, curr] = args
 	num = read strNum :: Integer
 
 printName :: Integer -> String -> IO ()
